@@ -182,7 +182,7 @@ Safety alignment in diffusion language models (\dllms{}) relies heavily on a tra
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\columnwidth]{arch1.jpg}
+  \includegraphics[width=\columnwidth]{arch1.pdf}
   \caption{\method{} attack pipeline. After $k$ clean denoising steps, committed refusal tokens are re-masked and replaced with a 12-token affirmative prefix; denoising resumes to produce compliant output. No gradient computation is required. See \cref{sec:gradient} for why adding gradient optimization degrades ASR.}
   \label{fig:method}
 \end{figure}
