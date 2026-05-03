@@ -720,7 +720,6 @@ We will release: training code (LoRA configs, persona-injection schedule, moral-
 \label{tab:advtrain_ethics}
 \centering
 \small
-\resizebox{\columnwidth}{!}{
 \begin{tabular}{@{}lcccccc@{}}
 \toprule
 \textbf{Cond.} & Norm. & Prag. & Auth. & Fict. & Over. & Dil. \\
@@ -733,7 +732,6 @@ Tennant-Adv  & $.672$ & $.704$ & $.695$ & $.633$ & $.694$ & $.761$ \\
 \rlmr{}-Adv  & $.679$ & $.725$ & $.729$ & $.630$ & $.680$ & $.757$ \\
 \bottomrule
 \end{tabular}
-}
 \end{table}
 
 
@@ -772,7 +770,6 @@ Tables~\ref{tab:ethics_adversarial_app}--\ref{tab:ethics_llama8b} provide \ethic
 \label{tab:ethics_adversarial_app}
 \centering
 \small
-\resizebox{\columnwidth}{!}{
 \begin{tabular}{@{}lccccccc@{}}
 \toprule
 \textbf{Cond.} & Norm. & Prag. & Auth. & Fict. & Over. & Dil. & $\Delta$ \\
@@ -783,7 +780,6 @@ Tennant  & 66.5 & 70.0 & 70.0 & 61.5 & 68.5 & 75.0 & +2.5 \\
 \rlmr{}  & 66.5 & 70.5 & 70.0 & 62.0 & 68.0 & 75.5 & +2.7 \\
 \bottomrule
 \end{tabular}
-}
 \end{table}
 
 \begin{table}[H]
@@ -791,7 +787,6 @@ Tennant  & 66.5 & 70.0 & 70.0 & 61.5 & 68.5 & 75.0 & +2.5 \\
 \label{tab:ethics_gemma9b}
 \centering
 \small
-\resizebox{\columnwidth}{!}{
 \begin{tabular}{@{}lccccccc@{}}
 \toprule
 \textbf{Cond.} & Norm. & Prag. & Auth. & Fict. & Over. & Dil. & $\Delta$ \\
@@ -802,7 +797,6 @@ Tennant  & 83.0 & 82.5 & 51.0$^\dagger$ & 56.5$^\dagger$ & 59.5$^\dagger$ & 80.5
 \rlmr{}  & 83.5 & 82.5 & 50.5$^\dagger$ & 56.0$^\dagger$ & 58.0$^\dagger$ & 82.0 & $-$17.7 \\
 \bottomrule
 \end{tabular}
-}
 \end{table}
 
 \begin{table}[H]
@@ -810,7 +804,6 @@ Tennant  & 83.0 & 82.5 & 51.0$^\dagger$ & 56.5$^\dagger$ & 59.5$^\dagger$ & 80.5
 \label{tab:ethics_llama8b}
 \centering
 \small
-\resizebox{\columnwidth}{!}{
 \begin{tabular}{@{}lccccccc@{}}
 \toprule
 \textbf{Cond.} & Norm. & Prag. & Auth. & Fict. & Over. & Dil. & $\Delta$ \\
@@ -821,7 +814,6 @@ Tennant  & 63.0 & 65.0 & 63.0 & 59.5 & 59.0 & 62.5 & $-$1.2 \\
 \rlmr{}  & 62.5 & 65.0 & 63.0 & 59.0 & 58.5 & 63.5 & $-$0.7 \\
 \bottomrule
 \end{tabular}
-}
 \end{table}
 
 Gemma-9b shows the most severe parse failure issue: Tennant and \rlmr{} under Authority produce 70--94\% unparseable responses (per subset), and Fiction/Override also show 29--80\% parse failures for morally-trained conditions. The apparent accuracy drops ($\Delta=-17$) are driven primarily by parse failures rather than genuine moral degradation. Llama-8b shows a consistent floor effect ($\sim$62\%) across all conditions with minimal attack sensitivity; Base/Selfish show parse failures under Override ($>$50\% of responses). Deontology accuracy is near-chance ($\sim$50--55\%) for all Llama conditions, suggesting this subset is poorly calibrated for 8B models.
