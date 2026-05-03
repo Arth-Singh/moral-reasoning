@@ -480,6 +480,34 @@ The safety directive prepended before the adversarial persona in the defense exp
 
 Our 30 agentic scenarios span seven categories, with the number of scenarios per category: Resource Allocation (5), Deception and Truth-Telling (5), Loyalty Conflicts (4), Justice and Fairness (4), Institutional Corruption (4), Whistleblowing and Transparency (4), Authority and Power (4). Each scenario includes four choices annotated along five ethical dimensions (harm, deception, manipulation, selfishness, fairness violation) on a 0--1 scale.
 
+\section{Generated Summary Figures}
+\label{sec:generated_summary_figures}
+
+We include three generated visual summaries to make the experimental story and mechanistic interpretation easier to audit alongside the quantitative results in the main paper. These figures are illustrative summaries only; the measured effects are reported in the main tables and in the detailed appendix analyses below.
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth]{appendix_moral_teaser.png}
+\caption{Story-level summary of the central result. Moral reward training substantially improves robustness to persona attacks, while Fiction-style role-play remains the largest residual failure mode.}
+\label{fig:appendix_moral_teaser}
+\end{figure*}
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth]{appendix_moral_mechanism.png}
+\caption{Mechanistic summary of the paper's interpretation: persona attacks enter through context, moral reward PPO shifts intermediate representations, rank-1 layer-21 steering recovers much of the robustness gain, and competing compliance/alignment heads help explain the Fiction residual.}
+\label{fig:appendix_moral_mechanism}
+\end{figure*}
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth]{appendix_moral_causal.png}
+\caption{Training-to-robustness summary. Noise controls do not explain the robustness gains, while moral-reward training produces the largest transfer improvement; dense reasoning-level reward is more effective than sparse action-only reward in this setting.}
+\label{fig:appendix_moral_causal}
+\end{figure*}
+
+\clearpage
+
 
 \section{Detailed Steering Analysis}
 \label{sec:steering_details_app}
